@@ -1,11 +1,11 @@
 <!-- Sarah workman, Pretty about you, 09/12/2021-->
 
 <style> 
-#gridlayout {
-  background: blue;
-  color: white;
-  font-family: ariel, sans-serif; 
-  don't size: 30px;
+section {
+  display: grid;
+  grid-template-columns: auto auto;
+ 
+  
 }
 
 img{ border-style: solid; } 
