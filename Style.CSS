@@ -11,6 +11,8 @@ section {
 
 img{ border-style: solid; } 
 #imgWrapper{ padding-left: 25%; }
+nav{font-family: arial, san-serif;
+  font-size: 30px;}
 
 footer{
     background: light blue;
