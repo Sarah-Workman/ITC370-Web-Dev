@@ -4,6 +4,7 @@
 section {
   display: grid;
   grid-template-columns: auto auto;
+  border-color: Black;
  
   
 }
@@ -14,6 +15,7 @@ img{ border-style: solid; }
 footer{
     background: light blue;
     border-radius: 5px; 
+   
     color: white;
     font-family: ariel, san-serif;
     font size: 30px;
