@@ -4,7 +4,7 @@
 section {
   display: grid;
   grid-template-columns: auto auto;
-  border-color: Black;
+  border: 5px solid black;
   background: blue;
   padding: 25px;
  
