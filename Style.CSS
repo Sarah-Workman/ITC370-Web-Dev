@@ -5,12 +5,15 @@ section {
   display: grid;
   grid-template-columns: auto auto;
   border-color: Black;
+  background: blue;
+  padding: 25px;
  
   
 }
 
 img{ border-style: solid; } 
-#imgWrapper{ padding-left: 25%; }
+
+
 nav{font-family: arial, san-serif;
   font-size: 30px;}
 
