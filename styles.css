@@ -1,7 +1,9 @@
+/* Clear Margins */
 *{
     margin: 0px;
     padding: 0px;
 }
+/* This is the sytle for the heading of the page, that has a child nav*/
 img{
     position: relative;
     width: 1500px;
@@ -54,6 +56,7 @@ img{
             background-color: #03045e;
             color: white;
  }
+ /* Breadcrumbs area */
     
     .breadcrumbs{
         margin-left: 2em;
@@ -80,6 +83,7 @@ img{
     .breadcrumbs a:hover{
         font-weight: bolder;
     }
+    /* whole elements */
     .footermenu{
      background-color: #d8f3dc;
      
@@ -89,20 +93,44 @@ img{
     }
     .products{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     margin-bottom: 30px;
     }
+
+   /*sub elemts*/
 
     .product-card1{
     display: inline-block;
   
     padding: 15px;
-    animation: mymove 10s infinite;
-    animation-timing-function: linear;
+    animation: mymove 1.5s;
+    
     margin-left: 25%;
     margin-top: 5%;
 }
-
+.product-card2{
+    display: inline-block;
+  
+    padding: 15px;
+    animation: mymove 1.5s;
+  
+    margin-left: -2%;
+    margin-top: 15%;
+}
+.product-card3{
+    display: inline-block;
+  
+    padding: 15px;
+    animation: mymove 1.5s;
+    
+    margin-left: -10%;
+    margin-top: 5%;
+}
+/* animation */
+@keyframes mymove{
+    50% {opacity: 0;}
+}
+ /*Parts of footer*/
     .footermenu li{
        padding: 10px;
     }
@@ -113,19 +141,15 @@ img{
     .footermenu a:hover{
         font-weight: bolder;
     }
+    /* article  style*/
     .moto{
         text-align: center;
     }
-    @keyframes mymove{
-        from{opacity: 1;}
-        to{opacity: 0.5;}
-    }
+    /*product-card1 items*/
     .product-card1 img{
         width: 100%;
         
     }
-
- 
     .product-card1 h2{
         margin: 30px 0 15px;
     }
@@ -137,3 +161,40 @@ img{
         line-height: 1.5;
     }
 
+  
+    /*Product-card2 items*/
+  
+    .product-card2 img{
+        width: 25%;
+        height: 80%;
+    }
+    .product-card2 a{
+            color: black;
+            text-decoration: none;
+            } 
+     .product-card3 h2{
+             margin: 30px 0 15px;
+            }   
+     .product-card2 p{
+                line-height: 1.5;
+            }
+    
+
+   /*Product-card3 items*/
+    .product-card3 img{
+        width: 50%;
+        height: 60%;
+
+        
+    }
+ 
+    .product-card3 h2{
+        margin: 30px 0 15px;
+    }
+    .product-card3 a{
+        color: black;
+        text-decoration: none;
+    }
+    .product-card3 p{
+        line-height: 1.5;
+    }
