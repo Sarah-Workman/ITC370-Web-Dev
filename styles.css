@@ -6,6 +6,7 @@ img{
     position: relative;
     width: 1500px;
     height:200px;
+   
 }
 .logowrapper{
     border-radius: 15px 50px;
@@ -83,7 +84,8 @@ img{
      background-color: #d8f3dc;
      
       display:flex;
-      list-style: none;  
+      list-style: none; 
+      height: 100px; 
     }
     .products{
     display: grid;
@@ -91,11 +93,16 @@ img{
     margin-bottom: 30px;
     }
 
-.product-card{
-display: inline-block;
-border: 1px solid black;
-padding: 15px;
+    .product-card1{
+    display: inline-block;
+  
+    padding: 15px;
+    animation: mymove 10s infinite;
+    animation-timing-function: linear;
+    margin-left: 25%;
+    margin-top: 5%;
 }
+
     .footermenu li{
        padding: 10px;
     }
@@ -109,28 +116,24 @@ padding: 15px;
     .moto{
         text-align: center;
     }
-    .product-card img{
-        width: 100%
+    @keyframes mymove{
+        from{opacity: 1;}
+        to{opacity: 0.5;}
     }
-    .product-card h2{
+    .product-card1 img{
+        width: 100%;
+        
+    }
+
+ 
+    .product-card1 h2{
         margin: 30px 0 15px;
     }
-    .product-card a{
+    .product-card1 a{
         color: black;
         text-decoration: none;
     }
-    .product-card p{
+    .product-card1 p{
         line-height: 1.5;
     }
-    .orginal-price{
-        color:gray;
-        text-transform: uppercase;
-    }
-    .current-price span{
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    .savings{
-        color: green;
-    }
-   
+
