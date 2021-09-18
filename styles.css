@@ -4,15 +4,17 @@
     padding: 0px;
 }
 /* This is the sytle for the heading of the page, that has a child nav*/
-img{
+.background{
+    background-image: linear-gradient(to right, white,white,#a4ac86,#1b4332, #03071e);
     position: relative;
     width: 1500px;
-    height:200px;
-   
+    height: 200px;
 }
 .logowrapper{
     border-radius: 15px 50px;
-    background: #0077b6;
+    background: #1b4332;
+    box-shadow: 5px 5px 2px grey;
+
     position:absolute;
     padding: 20px;
     margin-left: 2em;
@@ -43,8 +45,8 @@ img{
 
        width: 7em;
        border-radius: 15px 50px;
-        background: #90e0ef;
-        color: black;
+        background: #81b29a;
+        color: white;
         text-align: center;
         font-weight: bold;
         display: inline-block;
