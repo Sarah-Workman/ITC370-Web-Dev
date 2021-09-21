@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="background">
+   
+            <div class="logowrapper">
+              
+                <h2><a href="Volustion_Bank(draft).html">Volusion Bank</a></h2>
+            </div>
+            <nav >
+                <ol>
+                   
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Services</a></li>
+                </ol>
+            </nav>
+            </div>
+    </header>
+    <ol class="breadcrumbs">
+        <li><a href="Volustion_Bank(draft).html">Home</a></li>
+        <li><a href="Personal_Products.html">Personal</a></li>
+  
+    </ol>
+    <div Class="product-cards">
+        <div Class="product-card">
+            <img class="student" src="student.jpg" alt="student">
+            <button class="accordion">Student Checking</button>
+                <div class="panel1">
+                
+                  
+                        <p>A checking account for the young doers of tomorrow. </p>
+                        <p>For students ages 14-17 with guardian. 0 minimum to open 0 service charges per month. </p>
+                  
+                </div>
+        </div>
+        <div Class="product-card">
+            <img Class="hiking" src="hiking.jpg" alt="couple hiking">
+            <button class="accordion">Free checking</button>
+                <div class="panel2">
+                    <p>Get a checking account that moves with you.</p>
+                    <p>0 minimum to open 0 service charges per month with paperless statement.</p>
+                    <p>Access to 24/7 customer support and ITM machines</p>
+                        
+                </div>
+        </div>
+        <div Class="product-card">
+            <img Class="hotAir" src="hot air baloon.jpg" alt="couples surrounded by hot air baloons">
+            <button class="accordion">Premier Checking</button>
+                <div class="panel3">
+                
+                        <p>Make your wallet work harder for you with our interest bearing Premier Checking account.</p>
+                        <p>Up to $10 in ATM reversals for 1 year.</p>
+                        <p>$50 minimum deposit and a $10  service fee</p>
+                
+                </div>
+        </div>
+        <div Class="product-card">
+            <img Class="oldCouple" src="oldCouple.jpg" alt="couples in front of plants">
+            <button class="accordion">50+ Checking</button>
+                <div class="panel4">
+               
+                        
+                        <p>We have the important things wrapped into one account for you. </p>
+                        <p>Our 50+ checking offers free yearly complementary checks. </p>
+                        <p>Identity protection services included.</p>
+                        <p>$3 paper fee or free paperless(65+ exempt)</p>
+                  
+                </div>
+        </div>
+
+    </div>
+    
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <div Class="personalProducts">
+        <img src="product_page.PNG" alt="summary of products">
+    </div>
+    <footer>
+        <p><a href="">Online Agreement</a></p>
+        <p><a href="">Locations</a></p>
+        <p><a href="">Contact Us</a></p>
+        <p><a href="">About Us</a></p>
+    </footer>
+</body>
+</HTML>
