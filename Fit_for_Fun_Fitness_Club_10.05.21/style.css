@@ -154,8 +154,21 @@ body, html{
 }
 .classCards img{
     width: 100%;
-    border: 1px solid black;
+  
    
+}
+.stepInterval{
+    border: black;
+}
+.classButton{
+    text-decoration: none;
+    background: #999;
+    border: 0;
+    color: white;
+    font-size: 12px;
+    height: 50px;
+    width: 200px;
+    text-transform: uppercase;
 }
 
    
