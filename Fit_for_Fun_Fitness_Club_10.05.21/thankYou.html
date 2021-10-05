@@ -9,35 +9,92 @@
         <a href="classes.html">Classes</a>
         <a href="info.html">Info</a>
     </div>
+    <div>
+    <h1>Fit for Fun Fitness Club</h1>
+<p class="three">Thank you for registering for a class</p>
+<p class="three">Here is a confirmation of your registration information:</p>
+<p class="three">First Name: </p><div id="firstname"></div>
+<p class="three">Last Name: </p><div id="lastname"></div>
+<p class="three">Email: </p><div id="email"></div>
+<p class="three">Phone Number: </p><div id="phone"></div>
+<p class="three">Best way to reach me are: </p><div id=contact></div>
+<p class="three">Classes you are interested in: </p><div id=classes></div>
+<p class="three">Prefered class time(s): </p><div id=time></div>
+</div>
+    <footer>
+    
+        <p><a href="">About Us</a></p>
+        <p><a href="">Classes</a></p>
+        <p><a href="">Info</a></p>
+        <p><a href="">Join Now</a></p>
+    </footer>
     <script>
          const params = new URLSearchParams(window.location.search);
         
-         if(params.has('firstname')){ let firstname = params.get('firstname');
-             document.getElementById("firstname").innerHTML = firstname; }
+         if(params.has('firstname')){
+            let firstname = params.get('firstname');
+            document.getElementById("firstname").innerHTML = firstname; }
 
-         if(params.has('lastname')){ let lastname = params.get('lastname');
+         if(params.has('lastname')){
+            let lastname = params.get('lastname');
             document.getElementById("lastname").innerHTML = lastname; }
 
-        if(params.has('email')){ let email = params.get('email');
-        document.getElementById("email").innerHTML = email; }
+        if(params.has('email')){
+            let email = params.get('email');
+            document.getElementById("email").innerHTML = email; }
 
-        if(params.has('phone')){ let phone = params.get('phone');
-        document.getElementById("phone").innerHTML = phone; } 
+        if(params.has('phone')){ 
+            let phone = params.get('phone');
+            document.getElementById("phone").innerHTML = phone; } 
         
-        if(params.has('contact')){ let contact = params.get('contact'); 
-         document.getElementById("contact").innerHTML = contact; } 
+        if(params.has('contact')){
+             let contact = params.get('contact'); 
+             document.getElementById("contact").innerHTML = contact; } 
          
-        if(params.has('time')){ let time = params.get('time'); 
-         document.getElementById("time").innerHTML = time; } 
+        if(params.has('time')){
+             let time = params.get('time'); 
+            document.getElementById("time").innerHTML = time; } 
          
-         class1=aerobics, class2=cycling, class3=boxing, class4=zumba, let classes = ""; 
+         let classes="";
+
+         if(params.has("class1")){
+             classes += params.get(class1) + ", ";
+         }
+
+         if(params.has("class2")){
+             classes += params.get(class2) + ", ";
+         }
+         if(params.has("class3")){
+             classes += params.get(class3) + ", ";
+         }
+         if(params.has("class4")){
+             classes += params.get(class4) + ", ";
+         }
+         if(params.has("class5")){
+             classes += params.get(class5) + ", ";
+         }
+         if(params.has("class6")){
+             classes += params.get(class6) + ", ";
+         }
+         if(params.has("class7")){
+             classes += params.get(class7) + ", ";
+         }
+         if(params.has("class8")){
+             classes += params.get(class8) + ", ";
+         }
+         if(params.has("class9")){
+             classes += params.get(class9) + ", ";
+         }
          
-         if(params.has('class1')){ classes += params.get('class1') + ", "; }
-          if(params.has('class2')){ classes += params.get('class2') + ", "; } 
-          if(params.has('class3')){ classes += params.get('class3') + ", "; } 
-          if(params.has('class4')){ classes += params.get('class4'); } 
+
           
           document.getElementById("classes").innerHTML = classes;
-    </script>
+
+          function setData(){
+    if(typeof(localStorage) != "undefined"){
+        document.getElementById("show").innerHTML = localStorage.name;}
+    }
+    
+        </script>
  </body>
 </HTML>          
