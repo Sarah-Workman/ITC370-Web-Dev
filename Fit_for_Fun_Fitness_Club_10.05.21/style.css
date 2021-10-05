@@ -101,6 +101,11 @@ body, html{
       height: 3em;
       width: 5em;
   }
+  #infoButton a{
+      text-decoration: none;
+      color: white;
+
+  }
 
   footer a{
       text-decoration: none;
@@ -170,5 +175,8 @@ body, html{
     width: 200px;
     text-transform: uppercase;
 }
-
+.classButton a{
+    text-decoration: none;
+    color: white;
+}
    
