@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="info.html">Info</a>
+    </div>
+    <form  action="thankYou.html" method="post">
+        <fieldset>
+            <div>
+                <label for="firstName">First Name: <span>*</span></label>
+                <input id="firstName" type="text" name="firstname" required></input>
+            </div>
+            <div>
+                <label for="lastName">Last Name: <span>*</span></label>
+                <input id="lastName" type="text" name="lastname" required ></input>
+            </div>
+            <div>
+                <label for="email">Email: <span>*</span></label>
+                <input id="email" type="email" name="email" required></input>
+            </div>
+            <div>
+                <label for="phone">Phone: <span>*</span></label>
+                <input id="phone" type="tel" name="phone" required></input>
+            </div>
+            <div>
+                <label for="reach">Best way to reach: </label><br />
+                <select id="reach">
+                    <option Value="Email">Email</option>
+                    <option Value="phone">Phone</option>
+                    <option Value="text">Text</option>
+                </select>
+            </div>
+            <label>Classes Offered</label>
+            <div class="checkbox">
+                <div>
+                    
+                <input id="crossTraining" type="checkbox" name="crossTraining" 
+                value="crossTraining" />
+                <label for="crossTraining">Cross Training</label>
+                <input id="Sprint" type="checkbox" name="Sprint" 
+                value="Sprint" />
+                <label for="Sprint">Sprint</label>
+                <input id="bodyPump" type="checkbox" name="bodyPump" 
+                value="bodyPump" />
+                <label for="bodyPump">Body Pump</label>
+                <input id="advancedCrossTraining" type="checkbox" name="advancedCrossTraining" 
+                value="advancedCrossTraining" />
+                <label for="advancedCrossTraining">Advanced Cross Training</label>
+                </div>
+                <div>
+                   
+                    <input id="mixxedFIT" type="checkbox" name="mixxedFIT" 
+                value="mixxedFIT" />
+                <label for="mixxedFIT">MixxedFIT </label>
+                <input id="Spin" type="checkbox" name="Spin" 
+                value="Spin" />
+                <label for="Spin">Spin</label>
+                <input id="BodyCombat" type="checkbox" name="BodyCombat" 
+                value="BodyCombat" />
+                <label for="BodyCombat">BodyCombat</label>
+                <input id="stepInterval" type="checkbox" name="stepInterval" 
+                value="stepInterval" />
+                <label for="stepInterval">Step Interval</label>
+                <input id="Zumba" type="checkbox" name="Zumba" 
+                value="Zumba" />
+                <label for="Zumba">Zumba</label>
+                </div>
+                <div>
+                    <input id="am" type="radio" name="am"
+                    value="am"/>
+                    <label id="am">AM</label>
+                    <input id="pm" type="radio" name="pm"
+                    value="pm"/>
+                    <label id="pm">PM</label>
+                
+                </div>
+
+            </div>
+            <button>Submit</button>
+
+        </fieldset>
+    </form>
+    <footer>
+    
+        <p><a href="">About Us</a></p>
+        <p><a href="">Classes</a></p>
+        <p><a href="">Info</a></p>
+        <p><a href="">Join Now</a></p>
+    </footer>
+</body>
+</HTML> 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="info.html">Info</a>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Fit For Fun Fitness Club</h1>
+            <p>Be The You<br> You Wish to Be </p>
+            <button><a href=info.html>Join Now</a></button>  
+        </div>
+    </div> 
+    <div class="row">
+        <div class="column">
+            <img src="class jump.jpg" alt="class" style="width:100%">
+            <div class="overlay"> 
+                <div class="text">8 Different Classes Throughout The Week</div>
+                <button id=infoButton >More Info</button>
+            </div>
+        </div>
+        <div class="column">
+            <img src="treadmill.jpg" alt="class" style="width:100%">
+            <div class="overlay"> 
+                <div class="text">State of The Art Facility</div>
+                <button id=infoButton >Take Tour</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+    
+        <p><a href="">About Us</a></p>
+        <p><a href="">Classes</a></p>
+        <p><a href="">Info</a></p>
+        <p><a href="">Join Now</a></p>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementByID("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction(){
+            if(window.pageYOffset>= sticky){
+                navbar.classlist.add("sticky")
+            }else{
+                navbar.classList.remove("sticky");
+            }
+            
+        }
+    </script>
+</body>
+</HTML>

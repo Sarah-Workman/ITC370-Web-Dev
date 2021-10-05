@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML lang="en">
+ <head>
+    <link rel="stylesheet" href="style.css"> 
+ </head>
+ <body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="info.html">Info</a>
+    </div>
+    <script>
+         const params = new URLSearchParams(window.location.search);
+        
+         if(params.has('firstname')){ let firstname = params.get('firstname');
+             document.getElementById("firstname").innerHTML = firstname; }
+
+         if(params.has('lastname')){ let lastname = params.get('lastname');
+            document.getElementById("lastname").innerHTML = lastname; }
+
+        if(params.has('email')){ let email = params.get('email');
+        document.getElementById("email").innerHTML = email; }
+
+        if(params.has('phone')){ let phone = params.get('phone');
+        document.getElementById("phone").innerHTML = phone; } 
+        
+        if(params.has('contact')){ let contact = params.get('contact'); 
+         document.getElementById("contact").innerHTML = contact; } 
+         
+        if(params.has('time')){ let time = params.get('time'); 
+         document.getElementById("time").innerHTML = time; } 
+         
+         class1=aerobics, class2=cycling, class3=boxing, class4=zumba, let classes = ""; 
+         
+         if(params.has('class1')){ classes += params.get('class1') + ", "; }
+          if(params.has('class2')){ classes += params.get('class2') + ", "; } 
+          if(params.has('class3')){ classes += params.get('class3') + ", "; } 
+          if(params.has('class4')){ classes += params.get('class4'); } 
+          
+          document.getElementById("classes").innerHTML = classes;
+    </script>
+ </body>
+</HTML>          
