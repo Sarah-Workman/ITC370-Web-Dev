@@ -105,7 +105,11 @@ body, html{
   footer a{
       text-decoration: none;
       color: black;
+    
 
+  }
+  footer{
+    background:rgba(0, 0, 0, 0.5);
   }
   .hero-text button a{
       text-decoration: none;
@@ -153,4 +157,5 @@ body, html{
     border: 1px solid black;
    
 }
+
    
