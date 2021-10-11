@@ -48,12 +48,12 @@ body, html{
     transform: translate(-50%, -50%);
     color: white;
 }
-.row {
+.row1 {
     display: flex;
     margin-top: 6em;
   }
   
-  .column {
+  .column1 {
     flex: 33.33%;
     padding: 5px;
     position: relative;
@@ -70,14 +70,11 @@ body, html{
     transition: .5s ease;
     background-color: #008CBA;
   }
-  .column:hover .overlay {
+  .column1:hover .overlay {
     opacity: 1;
   }
   
-  
-  .classCards .stepInterval:hover overlay{
-      opacity: 1;
-  }
+
   .text {
     color: white;
     font-size: 20px;
@@ -124,9 +121,7 @@ body, html{
    label {
     font-size: 20px;
    }
-   div {
-    margin-bottom: 30px;
-   }
+  
    input,
    textarea {
     border: 0;
@@ -148,23 +143,9 @@ body, html{
     width: 200px;
     text-transform: uppercase;
    }
-   .classCards{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    margin-bottom: 30px;
-    
-    padding: 15px;
-    
-}
-.classCards img{
-    width: 100%;
-  
-   
-}
-.stepInterval{
-    border: black;
-}
+
+
+
 .classButton{
     text-decoration: none;
     background: #999;
@@ -179,4 +160,46 @@ body, html{
     text-decoration: none;
     color: white;
 }
+.row {
+    display: flex;
+    margin-top: 6em;
+  }
+/* Three columns side by side */
+.column {
+    flex:  33.33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    position: relative;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+
+  
    
