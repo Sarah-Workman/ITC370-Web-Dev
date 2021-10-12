@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        Cobo San Lucas, Mexico
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logoWrapper">
+
+        </div>   
+        <div id="navbar">
+            <a href="">About</a>
+            <a href="">Hotels</a>
+            <a href="">Attractions</a>
+         </div>
+    </header>
+     <div class="hero-image">
+            <div class="hero-text">
+                <h1>Cobo San Lucas, Mexico</h1>
+               
+                <button><a href="">Book Now!</a></button>  
+            </div>
+     </div> 
+     <section class="article">
+     <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="resorts.jpg" alt="pool with area to seat overlooking ocean in cobo" style="width:100%">
+                <div class="container1">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+               
+                   <div class="container2">
+                    <h2 class="title">Resorts & Hotels</h2>
+                    <p>Cobo has many 5 star resorts and hotels to stay at.<br> Click the button to get connected with a partner resort and hotel. </p>   
+                   <button><a href="">Book Now!</a></button>
+                   </div>
+           </div>
+       </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+               
+                   <div class="container2">
+                    <h2 class="title">Things to do</h2>
+                    <p>Cobo has many 5 star resorts and hotels to stay at.<br> Click the image to browse things to do </p>   
+                   <button><a href="">Book Now!</a></button>
+                   </div>
+           </div>
+       </div>
+        <div class="column">
+            <div class="card">
+                <img src="image1.jpg" alt="drink toasting on beach" style="width: 100%" onclick="openModal()" class="hover-shadow">>
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                 <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                            <img src="image1.jpg" style="width: 100%">
+                        </div>
+                        
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                            <img src="image2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="image3.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="image4.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                                <img src="image5.jpg" style="width:100%">
+                          </div>
+                      
+                         
+                          <!-- Next/previous controls -->
+                                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                         <!-- Caption text -->
+                                 <div class="caption-container">
+                                 <p id="caption"></p>
+                                </div>
+                      </div>
+                 </div> 
+                <div class="container1">
+                   
+                 
+                    </div>
+                </div>
+            </div>
+      
+      
+    </div>
+</section>
+
+    <footer>
+        <p><a href="#AboutUs">About Us</a></p>
+        <p><a href="#Hotels">Hotels</a></p>
+        <p><a href="#Attractions">Attractions</a></p>
+        <p><a href="#Careers">Careers</a></p>
+    </footer>
+    <script>
+      
+
+      function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </script>
+</body>
+</HTML>            
