@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+<h1>Image Swap</h1>
+ <!--large image slideshow container--> 
+ <div id="largeimageWrapper">
+ 
+    <div class="mySlides fade">   
+        <span class="next" onclick="plusSlides(1)"><img  src="monkey.jpg" style="width: 70%" ></span>
+    </div> 
+
+    <div class="mySlides fade">   
+        <span class="next" onclick="plusSlides(1)"><img  src="fox.jpg" style="width:70%"></span>
+    </div> 
+
+    <div class="mySlides fade" >   
+        <span class="next" onclick="plusSlides(1)"><img  src="giraff.jpg" ></span>
+    </div> 
+
+    <div class="mySlides" >   
+        <span class="next" onclick="plusSlides(1)"><img  src="lion.jpg" style="width: 70%"></span>
+    </div> 
+
+    
+</div>
+
+<!--thumbnail -->
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"><img src=monkey.jpg></span> 
+  <span class="dot" onclick="currentSlide(2)"><img src=fox.jpg></span> 
+  <span class="dot" onclick="currentSlide(3)"><img src=giraff.jpg></span> 
+  <span class="dot" onclick="currentSlide(3)"><img src=lion.jpg></span> 
+</div>
+</body>
+
+<script src="script.js">
+</script>
+
+</html>
