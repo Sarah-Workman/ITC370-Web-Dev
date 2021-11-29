@@ -5,10 +5,12 @@
       Bed & Breakfast
     </title>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" >
+    
 </header>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Kailua Kove Bed & Breakfast</a>
+  <div class="container-fluid" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand"  href="index.html" style="font-family: ephesis; font-size:35px;">Kailua Kove Bed & Breakfast</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,33 +18,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              <span class="material-icons-outlined">
+               
+           
+              <a class="nav-link" href="contact.html" style="margin-left: 45em;"> <img src="images/email_white_48dp.svg"  ><span class="sr-only">(current)</span></a>
+            </span> 
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+         
+      
+          
         </div>
       </nav>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--carousel-->
+   
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/kailua1.jpg" class="d-block w-100" alt="...">
@@ -54,45 +48,113 @@
             <img src="images/kailua3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
+ 
 
-      <div class="cards" style="display: flex;  flex:  33.33%; padding: 2em;">
-      <div class="card" style="width: 18rem;">
+      <div class="cards" style="display: flex;  flex:  33.33%; padding: 2em; ">
+      <div class="card" style="width: 18rem; margin-left: 12em;">
             <img src="images/maileRoom1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Maile Room</h5>
+                <p class="card-text"> Large room with king bed, small table with desk, WiFi, cable TV, ceiling fan, & sliding door to lanai.</p>
+                <a href="contact.html" class="btn btn-primary">Book Now!</a>
                 </div>
       </div>
             <div class="card" style="width: 18rem;">
             <img src="images/kailua4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Kailua Welcomes You!</h5>
+                <p class="card-text">When you arrive at our bed and breakfast you are greeted by our friendly staff and given a cerimonial flower necklace.</p>
+                <a href="contact.html" class="btn btn-primary">Book Now!</a>
                 </div>
       </div>
             <div class="card" style="width: 18rem;">
             <img src="images/plumeriaRoom.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title">Plumeria Room:</h5>
+                <h5 class="card-title">Plumeria Room</h5>
                 <p class="card-text">Queen bed, private bathroom with shower, WiFi, cable TV, ceiling fan, and sliding door to lanai.</p>
                 <a href="contact.html" class="btn btn-primary">Book Now!</a>
                  </div>
             </div>
         </div>
+    
       </div>
-    <footer>
-      <img src="images/background.png">
-    </footer>   
+      <div class="middleWrapper">
+        <img src="images/background.png" style="opacity: 75%; width: 170%;">
+        <div class="imageText" >
+        <p style="font-family: satisfy; ">As you step into our rooms, the first thing you will notice is how fresh, airy and up to date, they are. The beds have crisp white linens  that beg you to take a late afternoon nap after spending the day at the beach. The spacious & clean private bathrooms are updated with floor to ceiling travertine, accented with granite countertop & sink. The open walk-in shower has a hand-held shower head as well. The kitchenette has everything you need. From granite countertop, sink, mini-fridge, Keurig coffeemaker, toaster & microwave. Kitchen utensils are provided. A daily self-serve continental breakfast is included. We re-stock it daily for your convenience to be enjoyed at your leisure.</p>
+        <br>
+        <h2 style="font-family: satisfy ">About Us</h2>
+        <p style="font-family: satisfy; ">Just a 5-minute walk away to the beach...<br>
+          Our local beach is pretty quiet with locals going for their daily walk or walking their dogs. 
+          Turn left and walk past the 2 buildings and the newly opened Nico’s Restaurant, cross the bridge and after the first street on your left,  you will find a narrow pathway that has access to the beach.
+          </p>
+          <h1 style="font-family: satisfy">Amenities</h1>
+          <div class="row">
+     
+            <div class="col-sm">
+            
+              <ul >
+           
+              <li>Gated Secured Home</li>
+              <li>Free Onsite Parking</li>
+              <li>Separate Entrance </li>
+              <li>Queen Size Bed</li>
+              <li>Air-Condition & Ceiling Fan</li>
+              <li>Free WiFi</li>
+              <li>Upscale Private Bathroom with Walk-In Shower</li>
+              <li> Kitchenette with Mini Fridge, Microwave</li>
+              <li>Keurig Coffeemaker</li>
+              <li>Free Continental Breakfast (self-serve)</li>
+          </ul>
+          </div><!--col-->
+              <div class="col-sm">
+                <ul >
+               <li>Private Lanai with Garden View</li>
+              <li>TV with Basic Cable</li>
+              <li> Kitchen Utensils (plates, glasses, silverware)</li>
+              <li>Toaster</li>
+              <li>Beach Towels</li>
+              <li>Beach Umbrella</li>
+              <li>Boogie Boards</li>
+              <li>Beach Chairs</li>
+              <li>Hair Dryer</li>
+             <li>Shampoo/Conditioner/Body Wash</li>
+        
+          </ul>
+        </div><!--col-->
+      </div><!--row-->
+      </div><!--image text-->
+      </div><!--middle wrapper-->
+      <br>
+      <footer>
+        <span class="material-icons-outlined">
+          <img src="images/place_black_24dp.svg">
+          Address: 804 Mokapu Road • Kailua HI 96734    
+        </span> 
+       
+        <span class="material-icons-outlined">
+          <img src="images/email_black_24dp.svg">
+          Email: paradisepalmbnb@gmail.com
+        </span> 
+        <span class="material-icons-outlined">
+          <img src="images/call_black_24dp.svg">
+          Phone: 808-261-1431
+          </span>
+          
+       
+    </footer> 
+  </div> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </HTML>                
