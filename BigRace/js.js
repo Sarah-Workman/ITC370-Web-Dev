@@ -10,7 +10,7 @@ function swapImage(image){
    // Document.getElementById('stopImage').src='./images/greenStopLight.jpg'
 //})
 
-
+//set up if else if maybe for the winner screen?
 
 function myMove(){
  
@@ -39,7 +39,7 @@ function myMove1(){
        if (pos == 900){
             clearInterval(id1);
        }else{ 
-          pos = x++ + Math.floor(Math.random() * 11);
+          pos = x++ + Math.floor(Math.random() * 10)+1;
            elem.style.left = pos + 'px';
         }//else end
      }// animate end
