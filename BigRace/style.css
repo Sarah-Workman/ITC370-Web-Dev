@@ -1,0 +1,32 @@
+.john_Snow{
+
+    position :absolute;
+    background:orange;
+    border :1px solid red;
+    width: 30px;
+    height: 30px;
+    }
+.daenerys_Targaryen{
+    position: absolute;
+    background: green;
+    border: 1px solid blue;
+    margin-top: 5em;
+    width: 30px;
+    height: 30px
+}
+
+.arya_Stark{
+    position: absolute;
+    background: purple;
+    border: 1px solid pink;
+    margin-top: 10em;
+    width: 30px;
+    height: 30px;
+}
+
+.stopImage{
+    margin-left: 50%;
+    margin-top:  2%;
+    width: 30px;
+    height: 30px;
+}
