@@ -1,63 +1,62 @@
-var id = null;
-var id1 = null;
-var id2 = null;
+//Sarah Workman 
 
+var id = null;
+
+
+
+function lightChange(image){
+    if (document.getElementById('stopImage').src='./images/greenStopLight.jpg'){
+        startRace;
+    }else (dcoument.getElementById('stopImage').src='./images/redStopLight.jpg');{
+        restartRace;
+    }
+}
 function swapImage(image){
     document.getElementById('stopImage').src='./images/greenStopLight.jpg'
 }
 
-//stopImage.addEventListener("dblclick", function(){
-   // Document.getElementById('stopImage').src='./images/greenStopLight.jpg'
-//})
 
-//set up if else if maybe for the winner screen?
+
+//set up if elseif maybe for the winner screen?
+
+//players
+const player1 = document.getElementsById("john_Snow");
+const player2 = document.getElementById("daenerys_Targaryen");
+const player3 = document.getElementById("arya_Stark");
+
+function startRace(){
+
+}
+
+function restartRace(){
+
+}
 
 function myMove(){
  
-var elem = document.getElementById("john_Snow");
-var pos = 0;
+
+let pos = 0;
+
 clearInterval(id);
 id = setInterval(animate, 10)
  function animate(){
-   if (pos == 900){
+   if (pos >= 900){
         clearInterval(id);
    }else{ 
-    pos++;
+        
+     
+             
+       pos += randomNumber(1,5);
+        document.getElementById("p1").innerHTML = pos;
        elem.style.left = pos + 'px';
     }//else end
  }//animate end
 }//myMove end
-function myMove1(){
- 
-    var elem = document.getElementById("daenerys_Targaryen");
-    var pos = 0;
-    var x = 0;
-   
-    clearInterval(id1);
-    id = setInterval(animate, 10)
-     function animate(){
-       if (pos == 900){
-            clearInterval(id1);
-       }else{ 
-          pos = x++ + Math.floor(Math.random() * 10)+1;
-           elem.style.left = pos + 'px';
-        }//else end
-     }// animate end
-    }//mymove1 end
 
-    function myMove2(){
- 
-        var elem = document.getElementById("arya_Stark");
-        var pos = 0;
-        var xq
-        clearInterval(id2);
-        id = setInterval(animate, 10)
-         function animate(){
-           if (pos == 900){
-                clearInterval(id2);
-           }else{ 
-              pos++;
-               elem.style.left = pos + 'px';
-            }//else end
-         }//animate end
-        }// myMove2 end
+
+
+
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
