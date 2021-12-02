@@ -20,12 +20,13 @@ function swapImage(image){
 //set up if elseif maybe for the winner screen?
 
 //players
+players[
 const player1 = document.getElementsById("john_Snow");
 const player2 = document.getElementById("daenerys_Targaryen");
-const player3 = document.getElementById("arya_Stark");
+const player3 = document.getElementById("arya_Stark");]
 
 function startRace(){
-
+    
 }
 
 function restartRace(){
@@ -48,7 +49,7 @@ id = setInterval(animate, 10)
              
        pos += randomNumber(1,5);
         document.getElementById("p1").innerHTML = pos;
-       elem.style.left = pos + 'px';
+       players.style.left = pos + 'px';
     }//else end
  }//animate end
 }//myMove end
@@ -56,7 +57,6 @@ id = setInterval(animate, 10)
 
 
 
-
-        function randomNumber(min, max) {
-            return Math.floor(Math.random() * (max - min)) + min;
-        }
+ function randomNumber(x, y) {
+     return Math.floor(Math.random() * (y - x)) + x;
+ }
