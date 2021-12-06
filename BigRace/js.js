@@ -1,6 +1,6 @@
 //Sarah Workman 
-
 var id = null;
+
 
 
 
@@ -32,8 +32,9 @@ function restartRace(){
 
 }
 
+
 function myMove(){
- 
+
 //players
 
 const player1 = document.getElementById("john_Snow");
@@ -48,23 +49,44 @@ let a = 0;
 clearInterval(id);
 id = setInterval(animate, 10)
  function animate(){
-   if (j,d,a == 900){
-        clearInterval(id);
+   if (j,d,a < 900){
+    j += randomNumber(1,5);
+    d += randomNumber(1,5);
+    a += randomNumber(1,5);
+
+  player1.style.left = j + 'px';
+  player2.style.left = d + 'px';
+  player3.style.left = a + 'px';
+
+  document.getElementById("p1").innerHTML = j;
+  document.getElementById("p2").innerHTML = d;
+  document.getElementById("p3").innerHTML = a;
+       
+  if(j,d,a === 200){
+    document.getElementById("whiteWalker").style.visibility = "visible"
+}  
+      
    }else{ 
-         j += randomNumber(1,5);
-         d += randomNumber(1,5);
-         a += randomNumber(1,5);
+    clearInterval(id); 
+    if(j >= 900 ){
+        //test win message
+        clearInterval(id);
+        document.getElementById("h1").innerHTML = j + ": " + "John Snow is the Winner!"
+    }else if(d >= 900 ){
+      clearInterval(id);
+        document.getElementById("h2").innerHTML = d + ": " + "Daenerys Targaryen is the Winner!"
+        clearInterval(id);
+    }else if(a >= 900 ){
+        document.getElementById("h3").innerHTML = a + " " +"Arya Stark is the Winner!"
+    }
+    
 
-       player1.style.left = j + 'px';
-       player2.style.left = d + 'px';
-       player3.style.left = a + 'px';
-
-       document.getElementById("p1").innerHTML = j;
-       document.getElementById("p2").innerHTML = d;
-       document.getElementById("p3").innerHTML = a;
+    
+       
     }//else end
+  
  }//animate end
-  winner();
+        
 }//myMove end
 
 
@@ -73,3 +95,4 @@ id = setInterval(animate, 10)
  function randomNumber(min, max) {
      return Math.floor(Math.random() * (max - min)) + min;
  }
+ //   

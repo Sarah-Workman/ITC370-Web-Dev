@@ -1,27 +1,53 @@
+.headerImg{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.finish_line h1{
+    position: fixed;
+    font-size: 50px;
+    margin-left: 75%;
+    transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+.startImg{
+    position: fixed;
+    z-index: -1;
+    margin-top: -2em;
+    height: 600px;
+    width: 300px;
+}
+.whiteWalker{
+   visibility: hidden;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
 .john_Snow{
 
     position :absolute;
-    background:orange;
-    border :1px solid red;
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    margin-left: 2em;
     }
 .daenerys_Targaryen{
     position: absolute;
-    background: green;
-    border: 1px solid blue;
-    margin-top: 5em;
-    width: 30px;
-    height: 30px
+    margin-top: 10em;
+    width: 100px;
+    height: 100px;
+    margin-left: 2em;
 }
 
 .arya_Stark{
     position: absolute;
-    background: purple;
-    border: 1px solid pink;
-    margin-top: 10em;
-    width: 30px;
-    height: 30px;
+   margin-top: 20em;
+    width: 100px;
+    height: 100px;
+    margin-left: 2em;
 }
 
 .stopImage{
