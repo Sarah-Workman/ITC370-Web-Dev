@@ -1,22 +1,31 @@
 //Sarah Workman 
+//global scope 
 var id = null;
+let green = './images/greenStopLight.jpg';
+let red = './images/redStopLight.jpg';
 
 
 
+document.getElementById('stopImage').addEventListener("dblclick", function(){
 
+   
 
-function swapImage(image){
+    
     document.getElementById('stopImage').src='./images/greenStopLight.jpg';
-    lightChange;
-}
+    
+     var x = document.getElementById('stopImage')
+     q = x.getAttribute("src");
 
-function lightChange(image){
-    if (document.getElementById('stopImage').src='./images/greenStopLight.jpg'){
-        myMove;
-    }else (document.getElementById('stopImage').src='./images/redStopLight.jpg');{
-        restartRace;
-    }
+    if (q == green){
+        myMove();  
+  
+   
+    }else if(q == red){
+    restartRace();
 }
+})
+
+
 
 
 
@@ -29,6 +38,8 @@ function lightChange(image){
 
 
 function restartRace(){
+    document.getElementById("daenerys_TargaryenVid").style.visibility = "hidden"
+    document.getElementById("daenerys_TargaryenVid").style.zIndex = "2"
 
 }
 
@@ -58,12 +69,14 @@ id = setInterval(animate, 10)
   player2.style.left = d + 'px';
   player3.style.left = a + 'px';
 
-  document.getElementById("p1").innerHTML = j;
-  document.getElementById("p2").innerHTML = d;
-  document.getElementById("p3").innerHTML = a;
+ 
        
   if(j,d,a === 200){
     document.getElementById("whiteWalker").style.visibility = "visible"
+    if(j,d,a >= 900){
+        document.getElementById("whiteWalker").style.visibility = "hidden"
+       
+    }
 }  
       
    }else{ 
@@ -71,13 +84,30 @@ id = setInterval(animate, 10)
     if(j >= 900 ){
         //test win message
         clearInterval(id);
-        document.getElementById("h1").innerHTML = j + ": " + "John Snow is the Winner!"
+        document.getElementById("john_Snow").style.height = "500px"
+        document.getElementById("john_Snow").style.width = "500px"
+        document.getElementById("john_Snow").style.marginLeft = "10%"
+        document.getElementById("john_Snow").style.marginTop = "10%"
+        document.getElementById("p1").style.zIndex = "6"
+        document.getElementById("p1").innerHTML = "John Snow Is The Winner!!"
+        restartRace();
     }else if(d >= 900 ){
       clearInterval(id);
-        document.getElementById("h2").innerHTML = d + ": " + "Daenerys Targaryen is the Winner!"
-        clearInterval(id);
+        document.getElementById("daenerys_TargaryenVid").style.visibility = " visible"
+        document.getElementById("daenerys_TargaryenVid").style.zIndex = "5"
+        document.getElementById("daenerys_TargarenVid").style.minHeight = "300%"
+        document.getElementById("daenerys_TargarenVid").style.minWeight = "120%"
+        document.getElementById("daenerys_TargarenVid").autoplay;
+        restartRace();
+       
     }else if(a >= 900 ){
-        document.getElementById("h3").innerHTML = a + " " +"Arya Stark is the Winner!"
+        clearInterval(id);
+        document.getElementById("daenerys_TargaryenVid").style.visibility = " visible"
+        document.getElementById("daenerys_TargaryenVid").style.zIndex = "5"
+        document.getElementById("daenerys_TargarenVid").style.minHeight = "300%"
+        document.getElementById("daenerys_TargarenVid").style.minWeight = "120%"
+        document.getElementById("daenerys_TargarenVid").autoplay;
+        restartRace();
     }
     
 
