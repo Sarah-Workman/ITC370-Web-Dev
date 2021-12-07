@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<HTML lang="en">
+ <head>
+     <title>Exercise 3.06</title>
+     <style >
+         *{
+             padding: 0;
+             margin: 0;
+         }
+       body{
+           font-family: sans-serif;
+           margin: 0 auto;
+           width: 1500px;
+       }
+       header{
+           align-items: center;
+           display: flex;
+           margin-bottom: 25px;
+       }
+       nav{
+           margin-left: 30px;
+       }
+       nav ul{
+            Display: flex;
+            list-style: none;
+        }
+        nav a{
+            color: black;
+            font-weight: bold;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+       .product_cards{
+           display: grid;
+           grid-template-columns: auto auto auto auto;
+           margin-bottom: 30px;
+       }
+   
+         .breadcrumbs{
+             display: flex;
+             list-style: none;
+         }
+         .breadcrumbs li{
+             padding: 10px;
+            
+         }
+         .breadcrumbs li:after{
+             content: '/';
+             margin-left: 20px;
+         }
+         .breadcrumbs li:last-child:after{
+             content: '';
+         }
+         .breadcrumbs a{
+             color: black;
+             text-decoration: none;
+         }
+         .breadcrumbs a:hover{
+             text-decoration: underline;
+         }
+    
+         .intro{
+             margin: 30px 0;
+             padding-left: 10px;
+             width: 50%;
+         }
+         .intro h1{
+             margin-bottom: 15px;
+         }
+         .intro p{
+             line-height: 1.5;
+         }
+                 .product-card{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        /* product card */
+        .product-card img{
+            width: 100%
+        }
+        .product-card h2{
+            margin: 30px 0 15px;
+        }
+        .product-card a{
+            color: black;
+            text-decoration: none;
+        }
+        .product-card p{
+            line-height: 1.5;
+        }
+        .orginal-price{
+            color:gray;
+            text-transform: uppercase;
+        }
+        .current-price span{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .savings{
+            color: green;
+        }
+        .unique{
+            width: 15em;
+            height: 17em;
+        }
+     </style>
+ </head>
+ <body>
+     <section>
+     <header>
+        <img src="https://dummyimage.com/200X100/000/fff&text=Logo" alt=""/>
+        
+     </header>
+     <nav>
+        <ul>
+            <li><a href="">Videos to rent</a></li>
+            <li><a href="">Videos to buy</a></li>
+            <li><a href="">Used DVDs</a></li>
+            <li><a href="">Offers</a></li>
+        </ul>
+    </section>
+    </nav>
+     <section>
+         <!--Breadcrumbs will go here-->
+         <ol class="breadcrumbs">
+             <li><a href="">Home</a></li>
+             <li><a href="">Used DVDs</a></li>
+             <li><a href="">Less than $10</a></li>
+         </ol>
+     </section>
+    <section class="intro">
+        <!--Introduction will go here-->
+        <h1>Videos Less than $10</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            In bibendum non purus quis vestiblum.
+            Pellentesque ultricies quam lacus, ut tristique sapien tristique et.
+        </p>
+    </section>
+    <section class="product-cards">
+        <!--Product cards will go here-->
+        <div class="product-card">
+            <img src="https:dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="">
+            <h2><a href="">Video title 1</a></h2>
+            <p class="orginal-price">RRP: $18.99</p>
+            <p class="current-price">Price you pay<span> $9.99</span></p>
+            <p class="savings">You're saving $9</p>
+        </div>
+        <div class="product-card">
+            <img src="https:dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="">
+            <h2><a href="">Video title 2</a></h2>
+            <p class="orginal-price">RRP: $18.99</p>
+            <p class="current-price">Price you pay<span> $9.99</span></p>
+            <p class="savings">You're saving $9</p>
+        </div>
+        <div class="product-card">
+            <img class="unique" src="pexels-tom-balabaud-7408586.jpg" alt="" >
+            <h2><a href="">Video title 3</a></h2>
+            <p class="orginal-price">RRP: $18.99</p>
+            <p class="current-price">Price you pay<span> $9.99</span></p>
+            <p class="savings">You're saving $9</p>
+        </div>
+        <div class="product-card">
+            <img src="https:dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="">
+            <h2><a href="">Video title 4</a></h2>
+            <p class="orginal-price">RRP: $18.99</p>
+            <p class="current-price">Price you pay<span> $9.99</span></p>
+            <p class="savings">You're saving $9</p>
+        </div>
+        <!--Similar to the above product crd 1 that is video title 1, the product cards for video titles 2,3, and 4
+        can be copied from Exercise 3.05, Product Cards-->
+    </section>
+ 
+ </body>
+</HTML>   

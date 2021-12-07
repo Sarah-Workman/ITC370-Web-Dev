@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML lang="en">
+ <head>
+     <title>Exercise 3.03</title>
+     <style type="text/css">
+         *{
+             margin: 0;
+             padding: 0;
+         }
+         .breadcrumbs{
+             display: flex;
+             list-style: none;
+         }
+         .breadcrumbs li{
+             padding: 10px;
+            
+         }
+         .breadcrumbs li:after{
+             content: '/';
+             margin-left: 20px;
+         }
+         .breadcrumbs li:last-child:after{
+             content: '';
+         }
+         .breadcrumbs a{
+             color: black;
+             text-decoration: none;
+         }
+         .breadcrumbs a:hover{
+             text-decoration: underline;
+         }
+     </style>
+ </head>
+ <body>
+     <ol class="breadcrumbs">
+         <li><a href="">Home</a></li>
+         <li><a href="">Used DVDs</a></li>
+         <li>Less than $10</li>
+     </ol>
+ </body>
+</HTML>   
