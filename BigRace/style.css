@@ -1,5 +1,6 @@
 .headerImg{
     position: absolute;
+    z-index: 1;
     width: 500px;
     height: 100px;
     margin-left: 30%;
@@ -7,6 +8,7 @@
 }
 .finish_line h1{
     position: fixed;
+    z-index: 1;
     font-size: 50px;
     margin-left: 75%;
     transform: rotate(90deg);
@@ -14,28 +16,42 @@
 }
 .startImg{
     position: fixed;
-    z-index: -1;
+    z-index: 1;
     margin-top: -2em;
     height: 600px;
     width: 300px;
 }
 .whiteWalker{
    visibility: hidden;
+   z-index: 3;
     width: 100px;
     height: 100px;
     position: absolute;
     border-radius: 50%;
+    animation-name: whiteWalker;
+    animation-duration: 5s;
+    animation-delay: 3s;
 }
-
+@keyframes whiteWalker {
+    0%{left: 0px;}
+    25%{left: 200px;}
+    50%{bottom:200px;}
+    75%{left: 200px;}
+    100%{bottom: 0px; left: 0px}
+}
 .john_Snow{
 
     position :absolute;
+    border-radius: 50%;
+    z-index: 3;
     width: 100px;
     height: 100px;
     margin-left: 2em;
     }
 .daenerys_Targaryen{
     position: absolute;
+    border-radius: 50%;
+    z-index: 3;
     margin-top: 10em;
     width: 100px;
     height: 100px;
@@ -43,7 +59,9 @@
 }
 
 .arya_Stark{
-    position: absolute;
+    position: absolute;  
+    border-radius: 50%;
+    z-index: 3;
    margin-top: 20em;
     width: 100px;
     height: 100px;
@@ -51,8 +69,26 @@
 }
 
 .stopImage{
-    margin-left: 50%;
+    margin-left: 25%;
     margin-top:  2%;
-    width: 30px;
-    height: 30px;
+    width: 5-px;
+    height: 50px;
+    z-index: 6;
+}
+.daenerys_TargaryenVid{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    
+}
+.john_SnowVid{
+    visibility: hidden;
+    z-index: 2;
+}
+.ary_StarkVid{
+    visibility: hidden;
+    z-index: 2;
 }
