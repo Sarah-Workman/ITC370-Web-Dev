@@ -13,16 +13,67 @@
   </head>
   <body>
       <div class="container">
-          <div class="heading">
-              
-          </div>
-    <h1>Hello, world!</h1>
+        <div class="container_ heading">
+    <h1>
+        <script class="display-1">
+                window.document.write("Hello Javascript");
+        </script>
+    </h1>
+    <p>
 
+        <script>
+              var myName = "Sarah";
+              document.write(myName);
+              //myName = "stich";
+              //document.write(myName);
+        </script>
+    </p>
+    <hr>
+    <script>
+
+        document.write("<p>My name is " + myName + "</p>")
+    </script>
+    </div>
+    <div>
+       <div class="container_heading">
+      <!-- <p onclick=alert(myName)>Click Me</p>-->
+       <button type="button" class="btn btn-primary" onclick = alert('Hello') id="userName">Say Hello</button>
+       <script>
+           var newName = prompt("What is your username?")
+           console.log(newName);
+           document.getElementById("userName").innerHTML = "Say hello " + newName;
+       </script>
+       </div>
+    </div>
+    <div>
+        <div class="container_heading">
+            <div class="card" style="width: 18rem;">
+                <figure class="figure">
+                <img src="images/dog1.jpg" class="card-img-top" alt="cute Corgi" id="theImg">
+                <script>
+                    var dogAlt = document.getElementById("theImg").alt;
+                    console.log("dogAlt")
+                 </script>
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary " onclick="document.getElementById('theImg').src = 'images/dog2.jpg'">Change Dog</a>
+                  <button type="button" class="btn btn-success" onclick="document.getElementById('theImg').src = 'images/dog1.jpg'">Original Dog</button>
+                </div>
+              </div>
+        </div>
+
+    </div>
+    <div id="theFooter"></div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
       </div>
   </body>
 </html>
